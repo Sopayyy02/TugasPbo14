@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="null" language="groovy" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="f65d33f4-711a-4972-bf4f-2960d6bc99f6">
+	<property name="ireport.zoom" value="1.4641000000000062"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="87"/>
+	<parameter name="namaUser" class="java.lang.String"/>
+	<queryString>
+		<![CDATA[SELECT * FROM Penerbit ORDER BY id_penerbit]]>
+	</queryString>
+	<field name="id_penerbit" class="java.lang.Integer"/>
+	<field name="nama_penerbit" class="java.lang.String"/>
+	<field name="alamat" class="java.lang.String"/>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="79" splitType="Stretch">
+			<ellipse>
+				<reportElement x="49" y="57" width="4" height="4" backcolor="#000000" uuid="d2d54c1b-89e7-402e-b807-69ee13e76961"/>
+			</ellipse>
+			<ellipse>
+				<reportElement x="14" y="4" width="62" height="69" forecolor="#FFFFFF" backcolor="#66FFFF" uuid="462574b0-9f56-4df7-ae2f-5529b6460be5"/>
+			</ellipse>
+			<line>
+				<reportElement x="95" y="72" width="363" height="1" uuid="b8746307-38f1-4db0-a3f9-66bc3a257526"/>
+			</line>
+			<staticText>
+				<reportElement x="75" y="1" width="405" height="69" uuid="a5946ec8-c856-4ba0-aacd-e6a456e6dac6"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="SansSerif" size="24"/>
+				</textElement>
+				<text><![CDATA[Laporan Data Penerbit Di Perpustakaan  Arcana Library]]></text>
+			</staticText>
+			<ellipse>
+				<reportElement x="481" y="4" width="62" height="69" forecolor="#FFFFFF" backcolor="#66FFFF" uuid="defee8c3-c580-498a-ae6e-307680f07125"/>
+			</ellipse>
+			<ellipse>
+				<reportElement x="469" y="27" width="83" height="23" backcolor="#FFFFFF" uuid="cfc1dce3-04e3-449f-98f3-207f24726e86"/>
+				<graphicElement>
+					<pen lineWidth="2.0"/>
+				</graphicElement>
+			</ellipse>
+			<ellipse>
+				<reportElement x="490" y="12" width="41" height="52" backcolor="#99FFFF" uuid="9d50f491-0f1a-40f5-b707-cb3e2f0d8f98"/>
+				<graphicElement>
+					<pen lineWidth="5.0"/>
+				</graphicElement>
+			</ellipse>
+			<ellipse>
+				<reportElement x="3" y="27" width="83" height="23" backcolor="#FFFFFF" uuid="e1758cf7-5560-44d2-bc12-1d1a8522c8ea"/>
+				<graphicElement>
+					<pen lineWidth="2.0"/>
+				</graphicElement>
+			</ellipse>
+			<ellipse>
+				<reportElement x="24" y="12" width="41" height="52" backcolor="#99FFFF" uuid="0ad7c317-e1a2-4b72-8353-9e5dac1750e7"/>
+				<graphicElement>
+					<pen lineWidth="5.0"/>
+				</graphicElement>
+			</ellipse>
+		</band>
+	</title>
+	<pageHeader>
+		<band height="35" splitType="Stretch">
+			<staticText>
+				<reportElement x="197" y="15" width="136" height="20" uuid="d6c0ce77-14ca-4836-9f39-7703e3f1228c"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="14"/>
+				</textElement>
+				<text><![CDATA[Tabel Data Penerbit]]></text>
+			</staticText>
+		</band>
+	</pageHeader>
+	<columnHeader>
+		<band height="70" splitType="Stretch">
+			<rectangle>
+				<reportElement x="128" y="50" width="208" height="20" uuid="1ea67f6c-a62b-47f0-b9da-dfc0c5ec75ce"/>
+			</rectangle>
+			<rectangle>
+				<reportElement x="336" y="50" width="209" height="20" uuid="c5f6f766-b113-4a92-aa7c-c10e2c7099c1"/>
+			</rectangle>
+			<staticText>
+				<reportElement x="390" y="50" width="100" height="20" uuid="5f403790-9adc-4b0b-b208-66ff55538c98"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<text><![CDATA[Alamat]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="182" y="50" width="100" height="20" uuid="43d6becc-6581-44c8-920c-4b1faf08c9c2"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<text><![CDATA[Nama Penerbit]]></text>
+			</staticText>
+			<rectangle>
+				<reportElement x="46" y="50" width="82" height="20" uuid="ba5b48ad-5057-481a-8f21-195536739969"/>
+			</rectangle>
+			<staticText>
+				<reportElement x="51" y="50" width="72" height="20" uuid="46dfad43-89bb-41e0-a32c-7084a42b1688"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<text><![CDATA[Id Penerbit]]></text>
+			</staticText>
+			<rectangle>
+				<reportElement x="11" y="50" width="35" height="20" uuid="a586df59-2d18-44d4-b221-7acd23c0c8fe"/>
+			</rectangle>
+			<staticText>
+				<reportElement x="16" y="50" width="24" height="20" uuid="6ace63d6-8948-41dc-a7c8-b3b4d9154a19"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<text><![CDATA[No]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="16" y="11" width="91" height="15" uuid="9ff68e26-f7ee-433d-ac9b-961d2a8981fe"/>
+				<text><![CDATA[Dicetak Oleh 	 :]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="16" y="26" width="91" height="20" uuid="69433c9a-dd52-47b6-a2cd-0f1cd9de8bf3"/>
+				<text><![CDATA[Pada Tanggal        :]]></text>
+			</staticText>
+			<textField pattern="dd/MM/yyyy">
+				<reportElement x="107" y="26" width="100" height="21" uuid="cf997f75-4f32-424e-85fc-2382d0d2448a"/>
+				<textFieldExpression><![CDATA[new java.util.Date()]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="107" y="11" width="100" height="15" uuid="05bba9a0-332e-4d94-8740-a1fe26fa7d88"/>
+				<textFieldExpression><![CDATA[$P{namaUser}]]></textFieldExpression>
+			</textField>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="20" splitType="Stretch">
+			<rectangle>
+				<reportElement x="11" y="0" width="35" height="20" uuid="87bceab2-7465-4192-aeb1-b73e9877cc7d"/>
+			</rectangle>
+			<textField>
+				<reportElement x="16" y="0" width="24" height="20" uuid="c57141b0-8e1e-41b9-a39c-85072b0183a6"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA[$V{REPORT_COUNT}]]></textFieldExpression>
+			</textField>
+			<rectangle>
+				<reportElement x="46" y="0" width="82" height="20" uuid="3e17a334-e6c9-4486-b505-bc210091bec7"/>
+			</rectangle>
+			<rectangle>
+				<reportElement x="336" y="0" width="209" height="20" uuid="edd83d4b-282b-485b-996d-a2aa9bbfdbbe"/>
+			</rectangle>
+			<rectangle>
+				<reportElement x="128" y="0" width="208" height="20" uuid="d0478ebf-01d1-46e7-88e9-7979dd63e40b"/>
+			</rectangle>
+			<textField>
+				<reportElement x="48" y="0" width="77" height="20" uuid="9e794b4a-7f1a-4cc0-8d38-88086b0e96a1"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA[$F{id_penerbit}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="129" y="0" width="205" height="20" uuid="fc8303e7-cfcd-4840-9323-9e95e412857a"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA[$F{nama_penerbit}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="336" y="0" width="207" height="20" uuid="47f59f06-ad10-4c5b-bd9d-4688bf36e461"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA[$F{alamat}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+	<columnFooter>
+		<band height="41" splitType="Stretch"/>
+	</columnFooter>
+	<pageFooter>
+		<band height="54" splitType="Stretch"/>
+	</pageFooter>
+	<summary>
+		<band height="42" splitType="Stretch"/>
+	</summary>
+</jasperReport>
